@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-nz">
     <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
         <meta charset="UTF-8" />
         <title>Lab 02 - Contact</title> 
     </head>
@@ -11,21 +15,38 @@
         </header>
        <nav>
            <h2>Navigation</h2>
-           <ul>
-               <li><a href=index.html>Home</a></li>
-               <li><a href=stories.html>Stories</a></li>
-               <li><a href=#!>Contact</a></li>
-           </ul>
+           
+               <a href=index.html>Home</a>
+              <a href=stories.html>Stories</a>
+               <a href=#!>Contact</a>
+           
        </nav>
 
        <main>
+           <style>
+               main{
+                display:flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+               }
+               div{ 
+                   display:flex;
+                   align-items: center;
+                   justify-content: space-around;
+                }
+                div a{
+                    padding: 10%;
+                    background: white;
+                    border-radius: 20%;
+                }
+            a:hover{
+                color:darkblue;
+            }
+           </style>
+           <div>
            <section>
-                <h3>address</h3>
-                <p>Will post daily updates on my location and you can book flights with
-                <a target="_blank" href=https://www.tripadvisor.co.nz>tripadvisor</a></p>
-
+                <a target="_blank" href=https://www.tripadvisor.co.nz>tripadvisor</a>
            </section>
-
            <section>
                <p>
                <a href="tel:+64034798397" >phone</a>
@@ -36,6 +57,7 @@
                <a href="mailto:pollythepenguin@mail.nz" >email</a>
                </p>
            </section>
+           </div>
        </main>
        
        <footer>
